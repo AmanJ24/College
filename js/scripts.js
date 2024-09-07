@@ -1,0 +1,8 @@
+
+// scripts.js
+
+// Example JavaScript functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Add any JavaScript functionality here
+    console.log('JavaScript is loaded and ready.');
+});

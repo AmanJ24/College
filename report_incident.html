@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Incident - SafeHer</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="SafeHer Logo" width="30" height="30" class="d-inline-block align-top">
+            SafeHer
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="safety_tips.html">Safety Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support Groups</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">Report an Incident</h1>
+            <p class="lead">Quickly report any incident to ensure your safety and the safety of others.</p>
+        </div>
+    </section>
+
+    <!-- Incident Report Form -->
+    <section class="incident-report-form text-center">
+        <div class="container">
+            <h2>Incident Report Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="incidentType">Type of Incident</label>
+                    <select class="form-control" id="incidentType">
+                        <option>Harassment</option>
+                        <option>Assault</option>
+                        <option>Suspicious Activity</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="incidentLocation">Location</label>
+                    <input type="text" class="form-control" id="incidentLocation" placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                    <label for="incidentDate">Date and Time</label>
+                    <input type="datetime-local" class="form-control" id="incidentDate">
+                </div>
+                <div class="form-group">
+                    <label for="incidentDescription">Description of Incident</label>
+                    <textarea class="form-control" id="incidentDescription" rows="4" placeholder="Describe the incident"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="incidentEvidence">Upload Evidence (Optional)</label>
+                    <input type="file" class="form-control-file" id="incidentEvidence">
+                </div>
+                <div class="form-group">
+                    <label for="contactInfo">Your Contact Information (Optional)</label>
+                    <input type="text" class="form-control" id="contactInfo" placeholder="Enter your contact information">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="anonymousReport">
+                    <label class="form-check-label" for="anonymousReport">Submit Anonymously</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit Report</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter Signup</h5>
+                    <form>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
